@@ -322,8 +322,7 @@ define([
           evt.preventDefault();
         }
       } else {
-        if (key === KEYS.ENTER || key === KEYS.SPACE ||
-            (key === KEYS.DOWN && evt.altKey)) {
+        if (key === KEYS.ENTER || key === KEYS.SPACE || key === KEYS.DOWN || key === KEYS.UP) {
           self.open();
 
           evt.preventDefault();
